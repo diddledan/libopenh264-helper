@@ -9,14 +9,14 @@ description: |
   Usage:
     1. add "after: [libopenh264]" to your launcher
     2. prepend your command with "libopenh264-launch", like:
-      commands: "libopenh264-launch foo" or in combination with
+      "command: libopenh264-launch foo" or in combination with
       a desktop-helper, like:
-      commands: "desktop-launch libopenh264-launch foo" if foo is
+      "command: desktop-launch libopenh264-launch foo" if foo is
       in the $PATH. You can as well specify:
-      "libopenh264-launch $SNAP/foo"
+      "command: libopenh264-launch $SNAP/foo"
     3. add needed plugs to your application:
       - for a graphical application:
-          plugs: [X11 (or unity7 for appmenu integration)]. Thinki
+          plugs: [X11 (or unity7 for appmenu integration)]. Think
         about adding opengl for hardware acceleration.
       - if your application needs access to sound:
           plugs: [pulseaudio]
