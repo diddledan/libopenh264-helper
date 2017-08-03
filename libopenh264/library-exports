@@ -30,4 +30,6 @@ fi
 if [ ! -r "$H264DIR/libopenh264.so.4" ]; then
 	ln -s libopenh264.so "$H264DIR/libopenh264.so.4"
 fi
-LD_LIBRARY_PATH="$H264DIR:$LD_LIBRARY_PATH"
+
+export LD_LIBRARY_PATH="$H264DIR:$LD_LIBRARY_PATH"
+
